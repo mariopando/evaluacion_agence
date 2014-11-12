@@ -2,14 +2,14 @@
 <!-- saved from url=(0043)http://www.agence.com.br/caol/consultas.php -->
 <HTML><HEAD><TITLE>CAOL - Controle de Atividades Online - Agence Interativa</TITLE>
 <style>
-	#sub1, #sub2, #sub3
-	{ position: absolute;
-	  left: 480px;
-	  visibility: hidden;
-	  z-index: 3
-	}
+  #sub1, #sub2, #sub3
+  { position: absolute;
+    left: 480px;
+    visibility: hidden;
+    z-index: 3
+  }
 </style>
-		<script language='javascript' src="<?php echo base_url('js/popcalendar.js'); ?>"></script>
+    <script language='javascript' src="<?php echo base_url('js/popcalendar.js'); ?>"></script>
 <SCRIPT language="JavaScript">
 <!--
 <!-- comeco do selection box
@@ -119,20 +119,20 @@ function selectSub(cat) {
   <script language="JavaScript">
 <!--
 function PesquisaAvancada()
-	{
-		if (document.all['pesquisaAvancada'][1].style.display=='none')
-			{
-			document.all['pesquisaAvancada'][1].style.display='block'
-			
-			;
-			}
-		else
-			{
-			document.all['pesquisaAvancada'][1].style.display='none'
-		
-			;
-			}
-	}//-- fim PesquisaAvancada
+  {
+    if (document.all['pesquisaAvancada'][1].style.display=='none')
+      {
+      document.all['pesquisaAvancada'][1].style.display='block'
+      
+      ;
+      }
+    else
+      {
+      document.all['pesquisaAvancada'][1].style.display='none'
+    
+      ;
+      }
+  }//-- fim PesquisaAvancada
 //-->
 
 
@@ -567,22 +567,22 @@ return false;
 function numbersonly(myfield, e)
 {
     if (myfield.length ==0)
-	    myfield.value=0;  
-	  var key;
-	  var keychar;
+      myfield.value=0;  
+    var key;
+    var keychar;
     if (window.event)
      key = window.event.keyCode;
     else if (e)
      key = e.which;
     else
      return true;
-	  keychar = String.fromCharCode(key);
+    keychar = String.fromCharCode(key);
     if ((key==null) || (key==0) || (key==8) || 
-		      (key==9)|| (key==13)|| (key==27) )
+          (key==9)|| (key==13)|| (key==27) )
      return true;
     else if ((("0123456789").indexOf(keychar) > -1))
-	     return true;
-	else
+       return true;
+  else
    return false;
 }
 
@@ -600,8 +600,8 @@ var userPat=new RegExp("^" + word + "(\\." + word + ")*$")
 var domainPat=new RegExp("^" + atom + "(\\." + atom +")*$")
 var matchArray=emailStr.match(emailPat)
 if (matchArray==null) {
-	alert("Endereço de Email parece incorreto (verifique @ e .)")
-	return false
+  alert("Endereço de Email parece incorreto (verifique @ e .)")
+  return false
 }
 var user=matchArray[1]
 var domain=matchArray[2]
@@ -611,17 +611,17 @@ if (user.match(userPat)==null) {
 }
 var IPArray=domain.match(ipDomainPat)
 if (IPArray!=null) {
-	  for (var i=1;i<=4;i++) {
-	    if (IPArray[i]>255) {
-	        alert("Destino de IP inválido.")
-		return false
-	    }
+    for (var i=1;i<=4;i++) {
+      if (IPArray[i]>255) {
+          alert("Destino de IP inválido.")
+    return false
+      }
     }
     return true
 }
 var domainArray=domain.match(domainPat)
 if (domainArray==null) {
-	alert("Domínio inválido.")
+  alert("Domínio inválido.")
     return false
 }
 var atomPat=new RegExp(atom,"g")
@@ -733,15 +733,15 @@ type=text/javascript></SCRIPT>
                   <td nowrap valign="bottom" align="center"><span class="cel_tab">
                     <input type="submit" value="Por Consultor" name="act22223" class="tab_current">
                   </span></td>
-				  </form>
+          </form>
                   <td nowrap valign="bottom" align="center" class="cel_tab">&nbsp;&nbsp;</td>
-				  <form action="<?php echo base_url('con_desempenho_aba_cliente'); ?>">
+          <form action="<?php echo base_url('con_desempenho_aba_cliente'); ?>">
                   <td nowrap valign="bottom" align="center"><input type="submit" value="Por Cliente" name="act2" class="tab">                  </td>
-				  </form>
+          </form>
                   <td nowrap valign="bottom" align="center" class="cel_tab">&nbsp;&nbsp;</td>
-				  <form action="cadastro_boleto_carregado_cancelado.htm">
+          <form action="cadastro_boleto_carregado_cancelado.htm">
                   <td nowrap valign="bottom" align="center" class="cel_tab">&nbsp;</td>
-				  </form>
+          </form>
                   <td nowrap valign="bottom" align="center" class="cel_tab">&nbsp;&nbsp;</td>
                   <td nowrap valign="bottom" align="center" class="cel_tab">&nbsp;</td>
                   <td nowrap valign="bottom" align="center" class="cel_tab">&nbsp;&nbsp;</td>
@@ -803,7 +803,7 @@ type=text/javascript></SCRIPT>
                       </select>
                     </font></td>
                     <td width="20%" rowspan="2"><div align="center"><font color="black">
-                        <form action="con_desem_consultor_rel.htm">
+                        <form action="<?php echo site_url('con_desem_consultor_rel'); ?>">
                           <input style="BORDER-RIGHT: 1px outset; BORDER-TOP: 1px outset; FONT-SIZE: 8pt; BACKGROUND-POSITION-Y: center; LEFT: 120px; BACKGROUND-IMAGE: url(img/icone_relatorio.png); BORDER-LEFT: 1px outset; WIDTH: 110px; BORDER-BOTTOM: 1px outset; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: Tahoma, Verdana, Arial; HEIGHT: 22px; BACKGROUND-COLOR: #CCCCCC" type="submit" value="Relat&oacute;rio" name="btSalvar22" />
                         </form>
                       <form action="con_desem_consultor_graf.htm">
@@ -818,19 +818,19 @@ type=text/javascript></SCRIPT>
                     <td nowrap="nowrap" bgcolor="#efefef"><div align="right"><strong>Consultores</strong></div></td>
                     <td><table align="center">
                         <tr>
-                          <td><select multiple size="8" name="list1" id="list1" style="width:280">
-                              
-<option value="aline.chastel" >Aline Chastel Lima</option>
-<option value="anapaula.chiodaro" >Ana Paula Fontes Martins Chiodaro</option>
-<option value="bruno.freitas" >Bruno Sousa Freitas</option>
-<option value="contato" >Carlos Cezar Girão de Arruda</option>
-<option value="carlos.arruda" >Carlos Flávio Girão de Arruda</option>
-<option value="carlos.carvalho" >Carlos Henrique de Carvalho Filho</option>
-<option value="felipe.chahad" >Felipe Chahad</option>
-<option value="renato.pereira" >Renato Marcus Pereira</option>
-<option value="silvio.maraes" >Silvio Marães Ferreira</option>
-                            </select>
-                          </td>
+                         <td>
+                          <select multiple size="8" name="list1" id="list1" style="width:280">
+                          <option value="aline.chastel" >Aline Chastel Lima</option>
+                          <option value="anapaula.chiodaro" >Ana Paula Fontes Martins Chiodaro</option>
+                          <option value="bruno.freitas" >Bruno Sousa Freitas</option>
+                          <option value="contato" >Carlos Cezar Girão de Arruda</option>
+                          <option value="carlos.arruda" >Carlos Flávio Girão de Arruda</option>
+                          <option value="carlos.carvalho" >Carlos Henrique de Carvalho Filho</option>
+                          <option value="felipe.chahad" >Felipe Chahad</option>
+                          <option value="renato.pereira" >Renato Marcus Pereira</option>
+                          <option value="silvio.maraes" >Silvio Marães Ferreira</option>
+                         </select>
+                        </td>
                           <td align="center" valign="middle"><input name="button" type="button" onClick="move(list1,list2)" value=">>">
                               <br>
                               <input name="button" type="button" onClick="move(list2,list1)" value="<<">
