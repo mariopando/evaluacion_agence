@@ -9,7 +9,7 @@
 	  z-index: 3
 	}
 </style>
-		<script language='javascript' src="js/popcalendar.js"></script>
+		<script language='javascript' src="<?php echo base_url('js/popcalendar.js'); ?>"></script>
 <SCRIPT language="JavaScript">
 <!--
 <!-- comeco do selection box
@@ -115,7 +115,7 @@ function selectSub(cat) {
 }
 //  fim do seleciona e mostra campo -->
 </script>
-<SCRIPT language=JavaScript src="js/cor_fundo.js" type=text/javascript></SCRIPT>
+<SCRIPT language=JavaScript src="<?php echo base_url('js/cor_fundo.js'); ?>" type=text/javascript></SCRIPT>
   <script language="JavaScript">
 <!--
 function PesquisaAvancada()
@@ -649,16 +649,12 @@ return true;
 <META http-equiv=cache-Control content="no cache">
 <META http-equiv=expires content="sat, 04 dec 1993 21:29:02 gmt">
 <META http-equiv=Refresh content="600; url=main.php">
-<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link href="<?php echo base_url('css/style.css'); ?>" type="text/css" rel="stylesheet" />
 
 
-<SCRIPT language=JavaScript 
-src="inc/menu_array.js.htm" 
-type=text/javascript></SCRIPT>
+<SCRIPT language=JavaScript src="<?php echo base_url('inc/menu_array.js.htm'); ?>" type=text/javascript></SCRIPT>
 
-<SCRIPT language=JavaScript 
-src="inc/menu_script.js" 
-type=text/javascript></SCRIPT>
+<SCRIPT language=JavaScript src="<?php echo base_url('inc/menu_script.js'); ?>" type=text/javascript></SCRIPT>
 
 <META content="MSHTML 6.00.2800.1106" name=GENERATOR>
 </HEAD>
@@ -667,11 +663,11 @@ type=text/javascript></SCRIPT>
   <TBODY>
   <TR>
     <TD width="100%" colSpan=3 height=10><IMG 
-      src="inc/spacer.gif" 
+      src="<?php echo base_url('inc/spacer.gif'); ?>" 
       width=10></TD></TR>
   <TR>
     <TD noWrap width=10><IMG 
-      src="inc/spacer.gif" 
+      src="<?php echo base_url('inc/spacer.gif'); ?>" 
       width=10></TD>
     <TD width="100%">
       <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
@@ -680,34 +676,34 @@ type=text/javascript></SCRIPT>
           <TD style="BORDER-BOTTOM: #ccc 1px solid">&nbsp;</TD>
           <TD width=98 background="" height=40 rowSpan=2><A 
             href="http://www.agence.com.br/" target=_blank><IMG alt="" 
-            src="inc/logo.gif" 
+            src="<?php echo base_url('inc/logo.gif'); ?>" 
             border=0></A></TD></TR>
         <TR>
           <TD 
           style="PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; BORDER-LEFT: #ccc 1px dotted; PADDING-TOP: 3px"><IMG 
             height=15 alt="" 
-            src="inc/fig.gif" 
+            src="<?php echo base_url('inc/fig.gif'); ?>" 
             width=51 border=0></TD></TR></TBODY></TABLE></TD>
     <TD noWrap width=10><IMG 
-      src="inc/spacer.gif" 
+      src="<?php echo base_url('inc/spacer.gif'); ?>" 
       width=10></TD></TR>
   <TR>
     <TD width="100%" colSpan=3 height=10><IMG 
-      src="inc/spacer.gif" 
+      src="<?php echo base_url('inc/spacer.gif'); ?>" 
       width=10></TD></TR>
   <TR>
     <TD noWrap width=10><IMG 
-      src="inc/spacer.gif" 
+      src="<?php echo base_url('inc/spacer.gif'); ?>" 
       width=10></TD>
     <TD width="100%">&nbsp;</TD>
     <TD noWrap width=10><IMG 
-      src="inc/spacer.gif" 
+      src="<?php echo base_url('inc/spacer.gif'); ?>" 
       width=10></TD></TR></TBODY></TABLE>
 <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
   <TBODY>
   <TR>
     <TD noWrap width=10><IMG 
-      src="inc/spacer.gif" 
+      src="<?php echo base_url('inc/spacer.gif'); ?>" 
       width=10></TD>
     <TD width="100%">
 
@@ -720,13 +716,13 @@ type=text/javascript></SCRIPT>
               </table>
               <p><br><br><br><br><br>
 <CENTER><H1>Protótipo para Avaliação de Candidato.</H1><p>
-A Avaliação consiste no desenvolvimento da funcionalidade "<a href="con_desempenho.htm">Performance Comercial</a>" (Comercial -> Performance Comercial).</CENTER><br>
+A Avaliação consiste no desenvolvimento da funcionalidade "<a href="<?php echo site_url('con_desempenho'); ?>">Performance Comercial</a>" (Comercial -> Performance Comercial).</CENTER><br>
 
 </td>
         </tr>
       </table></TD>
     <TD noWrap width=10><IMG 
-      src="inc/spacer.gif" 
+      src="<?php echo base_url('inc/spacer.gif'); ?>" 
       width=10></TD></TR></TBODY>
 	  
 	  
